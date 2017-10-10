@@ -1,4 +1,4 @@
-### One time actions:
+### One time actions
 
 1. Fork master repo (on github.com)
    - This is done by clicking on the `Fork` button on https://github.com/pensando/sw
@@ -27,7 +27,7 @@
     $ git checkout -b feature-foo
 ```
 
-### For every chagne in a feature:
+### For every chagne in a feature
 
 1. Make sure you are in the correct branch (if branch is not created, create one using above)
 ```
