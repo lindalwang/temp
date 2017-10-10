@@ -1,4 +1,4 @@
-## One time actions:
+### One time actions:
 
 1. Fork master repo
    - this is done by clicking on the 'Fork' button on Github.com
@@ -20,7 +20,7 @@
      upstream   https://github.com/pensando/sw (push)
 ```
 
-## One time for every feature
+### One time for every feature
 
 1. Create a branch to work on feature e.g. feature-foo
 ```
@@ -59,7 +59,7 @@
    # this would trigger the sanity run, and let you know if there was a failure
 ```
 
-## How to rebase with master and resubmit
+### How to rebase with master and resubmit
 
 1. Fetch master and Rebase
 ```
@@ -79,10 +79,10 @@
     # this would trigger the sanity run and confirm if sanity passes
 ```
 
-## Working on multiple branches
+### Working on multiple branches
 While you were working on a branch, you can do the same for another branch and push the changes from each branch independently
 
-## Keeping your master up to date with upstream master
+### Keeping your master up to date with upstream master
 ```
     $ git fetch upstream master
     $ git rebase upstream/master
