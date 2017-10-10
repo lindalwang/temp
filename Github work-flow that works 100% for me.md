@@ -80,7 +80,14 @@
 ```
 
 ### Working on multiple branches
-While you were working on a branch, you can do the same for another branch and push the changes from each branch independently
+Each Branch is independent with respect to the following:
+  - You can do make another change in a different branch
+  - Rebase with master independent of other branches
+  - Push the changes independently
+  - Run sanities independently
+  - Commit/Merge independently
+
+Note: when you switcch between brranches the changes must be committed to the local clone, but this is like stashing your changes.
 
 ### Keeping your master up to date with upstream master
 ```
