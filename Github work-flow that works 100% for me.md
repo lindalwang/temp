@@ -1,7 +1,7 @@
 ### One time actions:
 
 1. Fork master repo
-   - this is done by clicking on the 'Fork' button on Github.com
+   - this is done by clicking on the 'Fork' button on https://github.com/pensando/sw
 
 2. Clone your fork
 ```
