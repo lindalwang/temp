@@ -27,7 +27,7 @@
     $ git checkout -b feature-foo
 ```
 
-### For every chagne in a feature
+### For every change in a feature
 
 1. Make sure you are in the correct branch (if branch is not created, create one using above)
 ```
