@@ -97,7 +97,7 @@ $ git rebase upstream/master
 Keeping master up to date with master ensures that when a new branch is created it has the latest copy of upstream master.
 
 ### Deleting a branch
-After a series of commit has gone into a branch, a branch can be easily deleted using
+After a series of commit has gone into a branch, and feature development/testing is complete, a branch can be easily deleted using
 ```
 $ git branch -d feature-foo
 ```
