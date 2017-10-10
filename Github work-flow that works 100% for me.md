@@ -44,7 +44,7 @@ $ emacs foo.c
 $ git push
 
 # if git push is done first time when a branch is set, you might need to set upstream
-$ git push --set-upstream feature-foo
+$ git push -f --set-upstream origin feature-foo
 
 # this would trigger the sanity run, and let you know if there was a failure
 ```
