@@ -87,7 +87,7 @@ Each Branch is independent with respect to the following:
   - Run sanities independently
   - Commit/Merge independently
 
-Note: when you switcch between brranches the changes must be committed to the local clone, but this is like stashing your changes.
+Note: when you switch between branches the changes must be committed to the local clone, but this is like stashing your changes.
 
 ### Keeping your master up to date with upstream master
 ```
