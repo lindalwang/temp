@@ -10,7 +10,7 @@ $ git clone https://github.com/jainvipin/sw
 
 3. Add upstream link
 ```
-$ git add remote upstream https://github.com/pensando/sw
+$ git remote add upstream https://github.com/pensando/sw
 
 # now git remote -v should show it appropriately, confirm by doing
 $ git remote -v
