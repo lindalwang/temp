@@ -31,7 +31,7 @@ $ git checkout -b feature-foo
 
 1. Make sure you are in the correct branch (if branch is not created, create one using above)
 ```
-$ git checkout feature-foo
+$ git checkout feature-foo master
 ```
 
 2. Make changes, edit files, etc.
