@@ -8,7 +8,7 @@
 $ git clone https://github.com/jainvipin/sw
 ```
 
-3. Add upstream link
+3. Add remote upstream
 ```
 $ git remote add upstream https://github.com/pensando/sw
 
@@ -29,14 +29,27 @@ $ git checkout -b feature-foo
 
 ### For every change in a feature
 
-1. Make sure you are in the correct branch (if branch is not created, create one using above)
+1. Switch branches (if the feature branch is already created)
 ```
 $ git checkout feature-foo
 ```
 
-2. Make changes, edit files, etc.
+2. Make changes, edit files, commit to your local repo
 ```
-$ emacs foo.c
+# make your edits to one or more files in the repo
+$ vi foo.c
+
+# check status of all modified/added files
+$ git status
+
+# check the diffs to make sure the diffs only contain intended changes
+$ git diff
+
+# git add can add specific files or all modified files at once (if no file/dir is specified)
+$ git add
+
+# commit the changes to the branch
+$ git commit -m "comment for this change"
 ```
 
 3. When you are ready, push the changes
@@ -49,14 +62,17 @@ $ git push -f --set-upstream origin feature-foo
 # this would trigger the sanity run, and let you know if there was a failure
 ```
 
-4. Say sanity failed, and you need to make more changes
+4. Say sanity failed, or you got comments to incorporate, and you need to make more changes
 ```
+# checkout branch and commit new changes
 $ git checkout feature-foo
-$ emacs foo.c
+$ vi foo.c
 $ git add foo.c
 $ git commit -m "fixed sanity failure" --amend
-$ git push -f
-# this would trigger the sanity run, and let you know if there was a failure
+
+# push the new commit; if you'd like to rebase (merge) changes from upstream, see rebase instructions later
+$ git push
+# this would re-trigger the sanity run, and let you know if there was a failure
 ```
 
 ### How to rebase with master and resubmit
@@ -73,7 +89,8 @@ $ git rebase upstream/master
 
 2. Push rebased changes
 ```
-# force push is needed because your branch has diverged
+# force push is needed because your branch has diverged and SHAs have changed
+# you can choose to not force push, but you'll have to dod 'git merge` instead of 'git rebase above'
 $ git push -f
     
 # this would trigger the sanity run and confirm if sanity passes
