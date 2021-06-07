@@ -1,23 +1,25 @@
+This is a curated git workflow that is proven to work. You are welcome to go with what works for you, but if you are unsure just follow the suggestions and commands mentioned below.
+
 ### One time actions
 
 1. Fork master repo (on github.com)
-   - This is done by clicking on the `Fork` button on https://github.com/pensando/sw
+   - This is done by clicking on the `Fork` button on https://github.com/pensando/psm-tools
 
 2. Clone your fork
 ```
-$ git clone https://github.com/jainvipin/sw
+$ git clone https://github.com/<your-github-id>/psm-tools
 ```
 
 3. Add remote upstream
 ```
-$ git remote add upstream https://github.com/pensando/sw
+$ git remote add upstream https://github.com/pensando/psm-tools
 
 # now git remote -v should show it appropriately, confirm by doing
 $ git remote -v
-origin     https://github.com/jainvipin/sw (fetch)
-origin     https://github.com/jainvipin/sw (push)
-upstream   https://github.com/pensando/sw (fetch)
-upstream   https://github.com/pensando/sw (push)
+origin     https://github.com/<your-github-id>/psm-tools (fetch)
+origin     https://github.com/<your-github-id>/psm-tools (push)
+upstream   https://github.com/pensando/psm-tools (fetch)
+upstream   https://github.com/pensando/psm-tools (push)
 ```
 
 ### One time for every feature
@@ -113,9 +115,21 @@ $ git rebase upstream/master
 ```
 Keeping master up to date with master ensures that when a new branch is created it has the latest copy of upstream master.
 
+### Squashing commits or merginig multiple commits with head reset
+```
+# Say, you have two commits that you'd like to squash and force-push them as one commit
+$ git reset HEAD~2
+$ git add .
+$ git commit -m "new commit message for both commits"
+$ git push -f origin <branch>
+
+# You can also use interactively squash commits using 
+$ git reset -i HEAD~2
+# This will open a file editor that will allow you to pick/squash specific commits, write the file after you are done
+```
+
 ### Deleting a branch
 After a series of commit has gone into a branch, and feature development/testing is complete, a branch can be easily deleted using
 ```
 $ git branch -d feature-foo
 ```
-
