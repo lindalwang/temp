@@ -3,23 +3,23 @@ This is a curated git workflow that is proven to work. You are welcome to go wit
 ### One time actions
 
 1. Fork master repo (on github.com)
-   - This is done by clicking on the `Fork` button on https://github.com/pensando/psm-tools
+   - This is done by clicking on the `Fork` button on https://github.com/jainvipin/gitt
 
 2. Clone your fork
 ```
-$ git clone https://github.com/<your-github-id>/psm-tools
+$ git clone https://github.com/<your-github-id>/gitt
 ```
 
 3. Add remote upstream
 ```
-$ git remote add upstream https://github.com/pensando/psm-tools
+$ git remote add upstream https://github.com/pensando/gitt
 
 # now git remote -v should show it appropriately, confirm by doing
 $ git remote -v
-origin     https://github.com/<your-github-id>/psm-tools (fetch)
-origin     https://github.com/<your-github-id>/psm-tools (push)
-upstream   https://github.com/pensando/psm-tools (fetch)
-upstream   https://github.com/pensando/psm-tools (push)
+origin     https://github.com/<your-github-id>/gitt (fetch)
+origin     https://github.com/<your-github-id>/gitt (push)
+upstream   https://github.com/pensando/gitt (fetch)
+upstream   https://github.com/pensando/gitt (push)
 ```
 
 ### One time for every feature
