@@ -2,7 +2,7 @@ This is a curated git workflow that is proven to work. You are welcome to go wit
 
 ### One time actions
 
-1. Fork master repo (on github.com)
+1. Fork main repo (on github.com)
    - This is done by clicking on the `Fork` button on https://github.com/jainvipin/gitt
 
 2. Clone your fork
@@ -77,13 +77,13 @@ $ git push
 # this would re-trigger the sanity run, and let you know if there was a failure
 ```
 
-### How to rebase with master and resubmit
+### How to rebase with main and resubmit
 
-1. Fetch master and Rebase
+1. Fetch main and Rebase
 ```
-# from any branch (note that each branch is independent of each other and also your master)
-$ git fetch upstream master
-$ git rebase upstream/master
+# from any branch (note that each branch is independent of each other and also your main)
+$ git fetch upstream main
+$ git rebase upstream/main
 <may have conflicts, resolve them as follows>
    $ git add .
    $ git rebase --continue
@@ -101,19 +101,19 @@ $ git push -f
 ### Working on multiple branches
 Each Branch is independent with respect to the following:
   - You can do make another change in a different branch
-  - Rebase with master independent of other branches
+  - Rebase with main independent of other branches
   - Push the changes independently
   - Run sanities independently
   - Commit/Merge independently
 
 Note: when you switch between branches the changes must be committed to the local clone, but this is like stashing your changes.
 
-### Keeping your master up to date with upstream master
+### Keeping your main up to date with upstream main
 ```
-$ git fetch upstream master
-$ git rebase upstream/master
+$ git fetch upstream main
+$ git rebase upstream/main
 ```
-Keeping master up to date with master ensures that when a new branch is created it has the latest copy of upstream master.
+Keeping main up to date with main ensures that when a new branch is created it has the latest copy of upstream main.
 
 ### Squashing commits or merginig multiple commits with head reset
 ```
